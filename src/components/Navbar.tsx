@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
-import logoImg from '../assets/logo.png';
+import logoImg from '../assets/logo_copy.png'
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -16,7 +16,7 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
-    { name: 'Home', href: '#' },
+    // { name: 'Home', href: '#' },
     { name: 'About', href: '#about' },
     { name: 'Courses', href: '#courses' },
     { name: 'Faculty', href: '#faculty' },
@@ -26,25 +26,26 @@ export default function Navbar() {
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 w-full py-2">
-      <div className="w-full px-4 md:px-6 flex justify-between items-center">
+    <header className="fixed top-0 left-0 right-0 z-50 w-full py-4">
+      <div className="w-full px-4 md:px-7 flex justify-around items-center">
 
-        {/* Logo */}
-        <div className="flex items-center z-50 -ml-6 md:-ml-40">
-          <img src={logoImg} alt="Aztech Academy Logo" className="h-24 md:h-32 w-auto object-contain drop-shadow-md transform scale-125 md:scale-150 origin-left" />
-          <div className="hidden sm:flex flex-col -ml-4 md:-ml-8 transition-colors duration-300">
-            <span className={`font-black text-2xl md:text-3xl leading-none tracking-tight drop-shadow-md transition-colors duration-300 ${isScrolled ? 'text-black' : 'text-white'}`}>AZTECH</span>
-            <span className={`text-[11px] md:text-xs tracking-widest font-bold uppercase mt-1 drop-shadow-sm transition-colors duration-300 ${isScrolled ? 'text-slate-800' : 'text-orange-200'}`}>ACADEMY</span>
-          </div>
-        </div>
 
         {/* Desktop Centered Pill Nav */}
-        <nav className="hidden xl:flex items-center bg-[#fff7ed]/90 backdrop-blur-md border border-white/20 rounded-full px-1 py-1 shadow-xl">
+        <nav className="hidden xl:flex items-center bg-[#F7F8FC]/70 backdrop-blur-md border-2 border-[#F7F8FC]/60 rounded-lg px-1 py-1 shadow-xl ">
+          <div className="flex items-center pl-2 pr-4 space-x-2 border-r border-[#2B3BAB]/20 mr-2 cursor-pointer">
+          <a href="/" className="flex items-center gap-2">
+            <img src={logoImg} alt="Aztec Academy Logo" className="h-11 w-11 object-cover" />
+            <div className="flex flex-col items-start justify-center leading-none mt-1 mb-1">
+              <span className="font-['Playfair_Display'] font-black text-[#2B3BAB] text-[28px] whitespace-nowrap leading-[0.9] ">Aztec</span>
+              <span className="font-['Playfair_Display'] italic font-bold text-[#2B3BAB] text-[16px] whitespace-nowrap opacity-90 leading-none ">Academy</span>
+            </div>
+            </a>
+          </div>
           {navLinks.map((link) => (
             <a
               key={link.name}
               href={link.href}
-              className="text-[#9a3412] hover:bg-white/60 hover:text-[#7c2d12] px-6 py-2 rounded-full font-bold transition-all text-sm uppercase tracking-wide"
+              className="text-[#2B3BAB] hover:bg-white/60 hover:text-[#1A1A2E] px-6 py-2 rounded-lg font-bold transition-all text-sm uppercase tracking-wide"
             >
               {link.name}
             </a>
@@ -53,14 +54,14 @@ export default function Navbar() {
 
         {/* Right Button */}
         <div className="hidden lg:block z-50">
-          <a href="#contact" className="bg-[#ea580c] hover:bg-[#c2410c] text-white px-8 py-3.5 rounded-full font-bold text-sm uppercase tracking-wider transition-all shadow-lg border border-white/10">
+          <a href="#contact" className="bg-[#4A4BBF] hover:bg-[#2B3BAB] text-white px-8 py-3.5 rounded-lg font-bold text-sm uppercase tracking-wider transition-all shadow-lg border-2 border-white/10 italic">
             REGISTER NOW
           </a>
         </div>
 
         {/* Mobile Menu Toggle */}
         <button
-          className="xl:hidden text-white z-50 bg-[#fff7ed]/20 backdrop-blur-md p-2 rounded-full border border-white/20"
+          className="xl:hidden text-white z-50 bg-[#F7F8FC]/20 backdrop-blur-md p-2 rounded-full border border-white/20"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
           {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -74,7 +75,7 @@ export default function Navbar() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="xl:hidden absolute top-0 left-0 right-0 bg-[#431407]/95 backdrop-blur-xl border-b border-white/10 shadow-2xl pt-28 pb-8 px-6"
+            className="xl:hidden absolute top-0 left-0 right-0 bg-[#1A1A2E]/95 backdrop-blur-xl border-b border-white/10 shadow-2xl pt-28 pb-8 px-6"
           >
             <div className="flex flex-col gap-2">
               {navLinks.map((link) => (
@@ -87,7 +88,7 @@ export default function Navbar() {
                   {link.name}
                 </a>
               ))}
-              <a href="#contact" className="mt-4 bg-[#ea580c] text-white px-6 py-4 rounded-xl font-bold text-center uppercase tracking-wider">
+              <a href="#contact" className="mt-4 bg-[#4A4BBF] text-white px-6 py-4 rounded-xl font-bold text-center uppercase tracking-wider ">
                 Register Now
               </a>
             </div>

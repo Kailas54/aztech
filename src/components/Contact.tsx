@@ -3,14 +3,14 @@ import { motion } from 'framer-motion';
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-20 md:py-32 bg-slate-50 relative">
+    <section id="contact" className="py-20 md:py-20 bg-slate-50 relative">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="text-center mb-16">
           <motion.p
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-[#ea580c] text-xs font-bold tracking-[0.2em] uppercase mb-3"
+            className="text-[#4A4BBF] text-xs font-bold tracking-[0.2em] uppercase mb-3"
           >
             Reach Out To Us
           </motion.p>
@@ -21,7 +21,7 @@ export default function Contact() {
             className="text-4xl md:text-6xl font-black italic leading-none tracking-tight"
           >
             <span className="text-slate-800">GET </span>
-            <span className="text-[#ea580c]">IN </span>
+            <span className="text-[#4A4BBF]">IN </span>
             <span className="text-slate-200">TOUCH</span>
           </motion.h2>
         </div>
@@ -34,7 +34,7 @@ export default function Contact() {
             viewport={{ once: true }}
             className="flex flex-col gap-8"
           >
-            <div className="bg-white p-8 rounded-3xl shadow-lg border border-slate-100">
+            <div className="bg-white p-8 rounded-lg shadow-lg border border-slate-100">
               <h3 className="text-2xl font-bold text-slate-800 mb-6">Contact Information</h3>
               <ul className="space-y-6">
                 <li className="flex items-start gap-4">
@@ -67,7 +67,7 @@ export default function Contact() {
               </ul>
             </div>
 
-            <div className="w-full h-64 bg-slate-200 rounded-3xl overflow-hidden shadow-lg border border-slate-100">
+            <div className="w-full h-64 bg-slate-200 rounded-lg overflow-hidden shadow-lg border border-slate-100">
               <iframe 
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.382414169992!2d76.8122978!3d8.6946026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05e9a26db8b211%3A0xc3f8e65dbd2b827e!2sAttingal%2C%20Kerala!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
                 width="100%" 
@@ -85,7 +85,7 @@ export default function Contact() {
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="bg-white p-8 md:p-10 rounded-3xl shadow-xl border border-slate-100"
+            className="bg-white p-8 md:p-10 rounded-lg shadow-xl border border-slate-100"
           >
             <h3 className="text-2xl font-bold text-slate-800 mb-2">Send an Enquiry</h3>
             <p className="text-slate-500 mb-8">Fill out the form below and our team will get back to you shortly.</p>

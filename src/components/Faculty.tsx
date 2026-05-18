@@ -11,14 +11,14 @@ export default function Faculty() {
   ];
 
   return (
-    <section id="faculty" className="py-20 md:py-32 bg-slate-50">
+    <section id="faculty" className="py-20 md:py-20 bg-slate-50">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="text-center mb-16">
           <motion.p
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-[#ea580c] text-xs font-bold tracking-[0.2em] uppercase mb-3"
+            className="text-[#4A4BBF] text-xs font-bold tracking-[0.2em] uppercase mb-3"
           >
             Our Educators
           </motion.p>
@@ -29,7 +29,7 @@ export default function Faculty() {
             className="text-4xl md:text-6xl font-black italic leading-none tracking-tight mb-4"
           >
             <span className="text-slate-800">MEET </span>
-            <span className="text-[#ea580c]">EXPERT </span>
+            <span className="text-[#4A4BBF]">EXPERT </span>
             <span className="text-slate-200">FACULTY</span>
           </motion.h2>
           <p className="mt-4 text-slate-600 max-w-2xl mx-auto">

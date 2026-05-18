@@ -1,10 +1,10 @@
 import { motion } from 'framer-motion';
 import { Calendar, MapPin, MessageCircle } from 'lucide-react';
-import backImg from '../assets/back.png';
+import backImg from '../assets/back2.png';
 
 export default function Hero() {
   return (
-    <section className="relative w-full h-[100dvh] flex items-center justify-center bg-[#431407] overflow-hidden pt-16">
+    <section className="relative w-full h-[100dvh] flex items-center justify-center bg-[#1A1A2E] overflow-hidden pt-16">
       {/* Background Image & Overlays */}
       <div className="absolute inset-0 z-0">
         <img
@@ -12,8 +12,8 @@ export default function Hero() {
           alt="Background"
           className="w-full h-full object-cover object-center"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#431407]/80 via-transparent to-transparent"></div>
-        <div className="absolute inset-0 bg-[#2e1005]/20 mix-blend-multiply"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-[#1A1A2E]/80 via-transparent to-transparent"></div>
+        <div className="absolute inset-0 bg-[#1A1A2E]/20 mix-blend-multiply"></div>
       </div>
 
       <div className="max-w-[90rem] mx-auto px-6 md:px-12 relative z-10 w-full h-full flex flex-col md:flex-row justify-center md:justify-between items-start md:items-center mt-12 md:mt-4 pb-20 md:pb-16">
@@ -24,7 +24,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-[12vw] leading-[0.9] sm:text-6xl md:text-7xl lg:text-8xl xl:text-[7rem] font-black text-white mb-6 tracking-tighter drop-shadow-[0_4px_16px_rgba(0,0,0,0.3)]"
+            className="text-[12vw] leading-[0.9] sm:text-6xl md:text-7xl lg:text-8xl xl:text-[7rem] font-black text-white mb-6 tracking-tight drop-shadow-[0_4px_16px_rgba(0,0,0,0.3)] font-['Playfair_Display']"
           >
             AZTECH<br/>ACADEMY
           </motion.h1>
@@ -55,7 +55,7 @@ export default function Hero() {
           {/* Bottom Right Text Overlaid on Card */}
           {/* Card with text overlay */}
           {/* Bottom Right Text */}
-          <div className="mt-auto hidden md:flex flex-col items-end text-right mb-6 lg:mb-12">
+          <div className="mt-auto hidden md:flex flex-col items-end text-right mb-6 lg:mb-1">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
@@ -71,20 +71,20 @@ export default function Hero() {
       </div>
 
       {/* Floating Action Button */}
-      <motion.div
+      {/* <motion.div
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.6, delay: 0.4 }}
         className="absolute z-30 bottom-[55px] sm:bottom-[65px] right-4 sm:right-6"
       >
-        <a href="#contact" className="bg-[#ea580c] hover:bg-[#c2410c] text-white px-6 py-3.5 sm:px-8 sm:py-4 rounded-full font-bold text-[13px] sm:text-lg transition-colors flex items-center gap-2 sm:gap-3 shadow-[0_0_30px_rgba(234,88,12,0.4)]">
+        <a href="#contact" className="bg-[#4A4BBF] hover:bg-[#2B3BAB] text-white px-6 py-3.5 sm:px-8 sm:py-4 rounded-full font-bold text-[13px] sm:text-lg transition-colors flex items-center gap-2 sm:gap-3 shadow-[0_0_30px_rgba(74,75,191,0.4)]">
           <MessageCircle className="w-5 h-5 ml-1 sm:w-6 sm:h-6" />
           Enquire Now
         </a>
-      </motion.div>
+      </motion.div> */}
 
       {/* Scrolling Marquee */}
-      <div className="absolute bottom-0 left-0 right-0 bg-[#9a3412] py-2 sm:py-3.5 overflow-hidden flex z-20 border-t border-white/10">
+      <div className="absolute bottom-0 left-0 right-0 bg-[#2B3BAB] py-2 sm:py-3.5 overflow-hidden flex z-20 border-t border-white/10">
         <motion.div
           animate={{ x: ["0%", "-50%"] }}
           transition={{ repeat: Infinity, ease: "linear", duration: 30 }}

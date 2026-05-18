@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 export default function About() {
   return (
-    <section id="about" className="py-20 md:py-32 bg-slate-50 relative overflow-hidden">
+    <section id="about" className="py-20 md:py-20 bg-slate-50 relative overflow-hidden">
       {/* Decorative circle */}
       <div className="absolute top-0 right-0 -mr-20 -mt-20 w-64 h-64 rounded-full bg-primary/5 blur-3xl"></div>
 
@@ -14,7 +14,7 @@ export default function About() {
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="text-[#ea580c] text-xs font-bold tracking-[0.2em] uppercase mb-3"
+            className="text-[#4A4BBF] text-xs font-bold tracking-[0.2em] uppercase mb-3"
           >
             About Us
           </motion.h4>
@@ -26,7 +26,7 @@ export default function About() {
             className="text-4xl md:text-6xl font-black italic leading-none tracking-tight mb-6"
           >
             <span className="text-slate-800">AZTECH </span>
-            <span className="text-[#ea580c]">ACADEMY </span>
+            <span className="text-[#4A4BBF]">ACADEMY </span>
             <span className="text-slate-200">ATTINGAL</span>
           </motion.h2>
 
@@ -56,7 +56,7 @@ export default function About() {
             viewport={{ once: true }}
             transition={{ delay: 0.4 }}
             href="#contact" 
-            className="inline-block bg-slate-800 text-white px-8 py-4 rounded-full font-bold hover:bg-primary transition-colors"
+            className="inline-block bg-slate-800 text-white px-8 py-4 rounded-lg font-bold hover:bg-primary transition-colors"
           >
             Contact Us Today
           </motion.a>
@@ -71,10 +71,10 @@ export default function About() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="bg-white rounded-3xl border border-orange-100 hover:border-[#ea580c] hover:shadow-xl transition-all duration-300 cursor-pointer overflow-hidden relative px-8 py-8 flex items-center gap-6 group"
+            className="bg-white rounded-3xl border-2 border-orange-200 hover:border-[#4A4BBF] hover:shadow-xl hover:shadow-[#4A4BBF]/40 transition-all duration-300 cursor-pointer overflow-hidden relative px-8 py-8 flex items-center gap-6 group"
           >
             {/* Ghost number */}
-            <div className="text-[7rem] font-black italic leading-none text-orange-50 select-none shrink-0 group-hover:text-orange-100 transition-colors duration-300">
+            <div className="text-[7rem] font-black italic leading-none text-orange-100 select-none shrink-0 group-hover:text-orange-300 transition-colors duration-300">
               01
             </div>
 
@@ -82,12 +82,12 @@ export default function About() {
             <div className="flex flex-col min-w-0">
               {/* Label + separator + tag */}
               <div className="flex items-center gap-3 mb-3">
-                <span className="text-[#ea580c] text-[10px] font-black tracking-[0.18em] uppercase whitespace-nowrap">Our Mission</span>
+                <span className="text-[#4A4BBF] text-[10px] font-black tracking-[0.18em] uppercase whitespace-nowrap">Our Mission</span>
                 <div className="h-px flex-1 bg-slate-200"></div>
-                <span className="text-slate-400 text-[10px] font-semibold tracking-widest uppercase whitespace-nowrap">Excellence</span>
+                <span className="text-orange-300 text-[10px] font-semibold tracking-widest uppercase whitespace-nowrap">Excellence</span>
               </div>
               {/* Big title */}
-              <h3 className="text-2xl md:text-3xl font-black uppercase text-slate-800 leading-tight mb-2 group-hover:text-[#ea580c] transition-colors duration-300">
+              <h3 className="text-2xl md:text-3xl font-black uppercase text-slate-800 leading-tight mb-2 group-hover:text-[#4A4BBF] transition-colors duration-300">
                 Foster Academic Excellence
               </h3>
               <p className="text-slate-500 text-sm leading-relaxed">
@@ -102,10 +102,10 @@ export default function About() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.25 }}
-            className="bg-[#7c2d12] rounded-3xl border-2 border-[#ea580c] hover:shadow-xl hover:shadow-orange-900/30 transition-all duration-300 cursor-pointer overflow-hidden relative px-8 py-8 flex items-center gap-6 group"
+            className="bg-[#1A1A2E] rounded-3xl border-2 border-[#4A4BBF] hover:border-[#F5C518] hover:shadow-xl hover:shadow-orange-900/30 transition-all duration-300 cursor-pointer overflow-hidden relative px-8 py-8 flex items-center gap-6 group"
           >
             {/* Ghost number */}
-            <div className="text-[7rem] font-black italic leading-none text-white/10 select-none shrink-0 group-hover:text-white/20 transition-colors duration-300">
+            <div className="text-[7rem] font-black italic leading-none text-white/20 select-none shrink-0 group-hover:text-white/70 transition-colors duration-300">
               02
             </div>
 
@@ -113,7 +113,7 @@ export default function About() {
             <div className="flex flex-col min-w-0">
               {/* Label + separator + tag */}
               <div className="flex items-center gap-3 mb-3">
-                <span className="text-[#fb923c] text-[10px] font-black tracking-[0.18em] uppercase whitespace-nowrap">Our Approach</span>
+                <span className="text-[#F5C518] text-[10px] font-black tracking-[0.18em] uppercase whitespace-nowrap">Our Approach</span>
                 <div className="h-px flex-1 bg-white/20"></div>
                 <span className="text-orange-200 text-[10px] font-semibold tracking-widest uppercase whitespace-nowrap">Tailored</span>
               </div>

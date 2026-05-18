@@ -1,68 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+
+
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    caret-color: transparent;
+    
+    --background: 228 45% 98%; /* Soft White */
+    --foreground: 240 28% 14%; /* Dark Navy */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%; /* Pure White */
+    --card-foreground: 240 28% 14%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 240 28% 14%;
 
-    --primary: 15 100% 55%; /* Orange brand color */
-    --primary-foreground: 210 40% 98%;
+    --primary: 239 48% 52%; /* Shield Purple */
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 47 92% 53%; /* Gold Yellow */
+    --secondary-foreground: 240 28% 14%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 228 20% 92%;
+    --muted-foreground: 240 36% 57%; /* Muted Purple */
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 33 91% 54%; /* Flame Orange */
+    --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 14 81% 51%; /* Warm Red */
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 15 100% 55%;
+    --border: 228 20% 90%;
+    --input: 228 20% 90%;
+    --ring: 33 91% 54%; /* Flame Orange */
 
     --radius: 0.5rem;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 240 28% 14%; /* Dark Navy */
+    --foreground: 228 45% 98%; /* Soft White */
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 240 28% 18%;
+    --card-foreground: 228 45% 98%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 240 28% 18%;
+    --popover-foreground: 228 45% 98%;
 
-    --primary: 15 100% 55%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 239 48% 52%; /* Shield Purple */
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 233 60% 42%; /* Deep Indigo */
+    --secondary-foreground: 228 45% 98%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 240 28% 22%;
+    --muted-foreground: 240 36% 75%; /* Lighter Muted Purple for dark mode */
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 47 92% 53%; /* Gold Yellow */
+    --accent-foreground: 240 28% 14%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 14 81% 51%; /* Warm Red */
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 15 100% 55%;
+    --border: 240 28% 22%;
+    --input: 240 28% 22%;
+    --ring: 47 92% 53%; /* Gold Yellow */
   }
 }
 

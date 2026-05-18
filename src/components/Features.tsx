@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+import { hover, motion } from 'framer-motion';
 
 export default function Facilities() {
   const facilities = [
@@ -47,14 +47,14 @@ export default function Facilities() {
   ];
 
   return (
-    <section id="facilities" className="py-20 md:py-32 bg-[#fdf8f3]">
+    <section id="facilities" className="py-20 md:py-20 bg-[#FFFFFF]">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="text-center mb-16">
           <motion.p
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-[#ea580c] text-xs font-bold tracking-[0.2em] uppercase mb-3"
+            className="text-[#4A4BBF] text-xs font-bold tracking-[0.2em] uppercase mb-3"
           >
             What We Offer
           </motion.p>
@@ -65,7 +65,7 @@ export default function Facilities() {
             className="text-4xl md:text-6xl font-black italic leading-none tracking-tight"
           >
             <span className="text-slate-800">CAMPUS </span>
-            <span className="text-[#ea580c]">FACILITIES </span>
+            <span className="text-[#4A4BBF]">FACILITIES </span>
             <span className="text-slate-300">& MORE</span>
           </motion.h2>
         </div>
@@ -79,21 +79,21 @@ export default function Facilities() {
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.5, delay: i * 0.08 }}
               whileHover={{ y: -4 }}
-              className={`relative rounded-3xl p-8 overflow-hidden transition-all duration-300 cursor-pointer
+              className={`group relative rounded-3xl p-8 overflow-hidden transition-all duration-300 cursor-pointer
                 ${facility.featured
-                  ? 'bg-[#7c2d12] shadow-2xl'
-                  : 'bg-[#fff7ed] border border-orange-100 hover:border-orange-200 hover:shadow-lg'
+                  ? 'bg-[#1A1A2E] shadow-2xl'
+                  : 'bg-[#F7F8FC] border border-orange-300 hover:border-[#4A4BBF] hover:shadow-lg hover:shadow-[#4A4BBF]/30'
                 }`}
             >
               {/* Pill tag */}
-              <div className={`inline-flex items-center px-3 py-1 rounded-full text-[10px] font-bold tracking-widest uppercase mb-5
-                ${facility.featured ? 'bg-white/15 text-white' : 'bg-orange-100 text-[#ea580c]'}`}>
+              <div className={`inline-flex items-center px-3 py-1 rounded-md text-[10px] font-bold tracking-widest uppercase mb-5
+                ${facility.featured ? 'bg-white/15 text-white' : 'bg-orange-300 text-white group-hover:bg-[#4A4BBF] group-hover:text-white'}`}>
                 {facility.tag}
               </div>
 
               {/* Title */}
               <h3 className={`text-2xl md:text-3xl font-black italic mb-3 leading-tight
-                ${facility.featured ? 'text-white' : 'text-[#7c2d12]'}`}>
+                ${facility.featured ? 'text-white' : 'text-[#1A1A2E]'}`}>
                 {facility.title}
               </h3>
 
@@ -104,8 +104,8 @@ export default function Facilities() {
               </p>
 
               {/* Ghost watermark letter */}
-              <div className={`absolute bottom-2 right-4 text-[9rem] font-black italic leading-none select-none pointer-events-none
-                ${facility.featured ? 'text-white/10' : 'text-orange-100'}`}>
+              <div className={`absolute bottom-2 right-4 text-[9rem] font-black italic leading-none select-none pointer-events-none transition-colors duration-300
+                ${facility.featured ? 'text-white/40' : 'text-orange-300 group-hover:text-[#4A4BBF]'}`}>
                 {facility.letter}
               </div>
             </motion.div>

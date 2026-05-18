@@ -1,4 +1,5 @@
 import { MapPin, Phone, Mail, ChevronRight } from 'lucide-react';
+import logoImg from '../assets/logo.jpeg'
 
 export default function Footer() {
   return (
@@ -9,12 +10,10 @@ export default function Footer() {
           {/* About Column */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-2 mb-6">
-              <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-bold text-xl">
-                AA
-              </div>
+              <img src={logoImg} alt="Aztec Academy Logo" className="h-12 w-12 border-white border-4 object-cover" />
               <div className="flex flex-col">
-                <span className="font-bold text-xl leading-none text-white">AZTECH</span>
-                <span className="text-xs tracking-widest text-primary font-semibold">ACADEMY</span>
+                <span className="font-['Playfair_Display'] font-bold text-2xl leading-[0.9] text-white">Aztech</span>
+                <span className="font-['Playfair_Display'] text-base tracking-widest text-primary font-semibold">Academy</span>
               </div>
             </div>
             <p className="text-sm leading-relaxed mb-6">

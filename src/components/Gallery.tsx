@@ -1,22 +1,26 @@
 import { motion } from 'framer-motion';
+import classroomImg from "../assets/img-1.jpeg";
+import classroomImg2 from "../assets/img-2.jpeg";
+import classroomImg3 from "../assets/img-3.jpeg";
+
 
 export default function Gallery() {
   const images = [
-    { src: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", alt: "Classroom photo", label: "Classrooms" },
-    { src: "https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", alt: "Board teaching", label: "Interactive Teaching" },
-    { src: "https://images.unsplash.com/photo-1427504494785-319ce514a8bb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", alt: "Students studying", label: "Focused Learning" },
+    { src:classroomImg, alt: "Classroom photo", label: "Classrooms" },
+    { src: classroomImg3, alt: "Board teaching", label: "Interactive Teaching" },
+    { src: classroomImg2, alt: "Students studying", label: "Focused Learning" },
     { src: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", alt: "Results", label: "Outstanding Results" },
   ];
 
   return (
-    <section id="gallery" className="py-20 md:py-32 bg-white">
+    <section id="gallery" className="py-20 md:py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="text-center mb-16">
           <motion.p
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-[#ea580c] text-xs font-bold tracking-[0.2em] uppercase mb-3"
+            className="text-[#4A4BBF] text-xs font-bold tracking-[0.2em] uppercase mb-3"
           >
             Campus Life
           </motion.p>
@@ -27,7 +31,7 @@ export default function Gallery() {
             className="text-4xl md:text-6xl font-black italic leading-none tracking-tight"
           >
             <span className="text-slate-800">LIFE </span>
-            <span className="text-[#ea580c]">AT </span>
+            <span className="text-[#4A4BBF]">AT </span>
             <span className="text-slate-200">AZTECH</span>
           </motion.h2>
         </div>

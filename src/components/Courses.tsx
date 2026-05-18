@@ -34,14 +34,14 @@ export default function Courses() {
   ];
 
   return (
-    <section id="courses" className="py-20 md:py-32 bg-white">
+    <section id="courses" className="py-20 md:py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="text-center mb-16">
           <motion.p
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-[#ea580c] text-xs font-bold tracking-[0.2em] uppercase mb-3"
+            className="text-[#4A4BBF] text-xs font-bold tracking-[0.2em] uppercase mb-3"
           >
             Academic Programmes
           </motion.p>
@@ -52,7 +52,7 @@ export default function Courses() {
             className="text-4xl md:text-6xl font-black italic leading-none tracking-tight"
           >
             <span className="text-slate-800">OUR </span>
-            <span className="text-[#ea580c]">COURSES </span>
+            <span className="text-[#4A4BBF]">COURSES </span>
             <span className="text-slate-200">OFFERED</span>
           </motion.h2>
         </div>
@@ -76,21 +76,21 @@ export default function Courses() {
               />
 
               {/* Orange gradient overlay — heavier at bottom */}
-              <div className="absolute inset-0 bg-gradient-to-t from-[#7c2d12] via-[#ea580c]/60 to-black/20" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#1A1A2E] via-[#4A4BBF]/60 to-black/20" />
 
               {/* Icon top-left */}
               <div className="absolute top-4 left-4 z-10 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-2">
-                <category.icon size={20} className="text-[#ea580c]" />
+                <category.icon size={20} className="text-[#4A4BBF]" />
               </div>
 
               {/* Content at bottom */}
               <div className="absolute bottom-0 left-0 right-0 z-10 p-5 flex flex-col gap-2">
-                <p className="text-[#ea580c] text-[10px] font-bold tracking-[0.15em] uppercase leading-none">{category.label}</p>
+                <p className="text-[#4A4BBF] text-[10px] font-bold tracking-[0.15em] uppercase leading-none">{category.label}</p>
                 <h3 className="text-white text-xl font-black leading-tight">{category.title}</h3>
                 <p className="text-slate-300 text-xs leading-relaxed line-clamp-3">{category.subtitle}</p>
 
                 {/* CTA */}
-                <div className="flex items-center gap-1 mt-2 text-[#ea580c] text-xs font-bold tracking-widest uppercase group-hover:gap-2 transition-all duration-300">
+                <div className="flex items-center gap-1 mt-2 text-[#4A4BBF] text-xs font-bold tracking-widest uppercase group-hover:gap-2 transition-all duration-300">
                   <span>Explore Course</span>
                   <ArrowRight size={12} />
                 </div>
