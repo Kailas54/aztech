@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Calendar, MapPin, MessageCircle } from 'lucide-react';
+import { Calendar, MapPin } from 'lucide-react';
 import backImg from '../assets/back2.png';
 
 export default function Hero() {
