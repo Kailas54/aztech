@@ -85,26 +85,28 @@ export default function Facilities() {
                   : 'bg-[#F7F8FC] border border-orange-300 hover:border-[#4A4BBF] hover:shadow-lg hover:shadow-[#4A4BBF]/30'
                 }`}
             >
-              {/* Pill tag */}
-              <div className={`inline-flex items-center px-3 py-1 rounded-md text-[10px] font-bold tracking-widest uppercase mb-5
-                ${facility.featured ? 'bg-white/15 text-white' : 'bg-orange-300 text-white group-hover:bg-[#4A4BBF] group-hover:text-white'}`}>
-                {facility.tag}
+              <div className="relative z-10">
+                {/* Pill tag */}
+                <div className={`inline-flex items-center px-3 py-1 rounded-md text-[10px] font-bold tracking-widest uppercase mb-5
+                  ${facility.featured ? 'bg-white/15 text-white' : 'bg-orange-300 text-white group-hover:bg-[#4A4BBF] group-hover:text-white'}`}>
+                  {facility.tag}
+                </div>
+
+                {/* Title */}
+                <h3 className={`text-2xl md:text-3xl font-black italic mb-3 leading-tight
+                  ${facility.featured ? 'text-white' : 'text-[#1A1A2E]'}`}>
+                  {facility.title}
+                </h3>
+
+                {/* Description */}
+                <p className={`text-sm md:text-base italic leading-relaxed max-w-xs
+                  ${facility.featured ? 'text-orange-200' : 'text-slate-500'}`}>
+                  {facility.desc}
+                </p>
               </div>
 
-              {/* Title */}
-              <h3 className={`text-2xl md:text-3xl font-black italic mb-3 leading-tight
-                ${facility.featured ? 'text-white' : 'text-[#1A1A2E]'}`}>
-                {facility.title}
-              </h3>
-
-              {/* Description */}
-              <p className={`text-sm md:text-base italic leading-relaxed max-w-xs
-                ${facility.featured ? 'text-orange-200' : 'text-slate-500'}`}>
-                {facility.desc}
-              </p>
-
               {/* Ghost watermark letter */}
-              <div className={`absolute bottom-2 right-4 text-[9rem] font-black italic leading-none select-none pointer-events-none transition-colors duration-300
+              <div className={`absolute z-0 bottom-2 right-4 text-[9rem] font-black italic leading-none select-none pointer-events-none transition-colors duration-300
                 ${facility.featured ? 'text-white/40' : 'text-orange-300 group-hover:text-[#4A4BBF]'}`}>
                 {facility.letter}
               </div>
