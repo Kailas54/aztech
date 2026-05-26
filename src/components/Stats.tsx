@@ -8,7 +8,7 @@ export default function Stats() {
   ];
 
   return (
-    <section className="bg-slate-50 py-12 border-b border-slate-200">
+    <section className="bg-blue-50 py-12 border-b border-slate-200">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 divide-y md:divide-y-0 md:divide-x divide-slate-200">
           {stats.map((stat, i) => (

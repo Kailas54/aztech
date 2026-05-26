@@ -13,7 +13,7 @@ export default function Gallery() {
   ];
 
   return (
-    <section id="gallery" className="py-20 md:py-20 bg-white">
+    <section id="gallery" className="py-20 md:py-20 bg-blue-50">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="text-center mb-16">
           <motion.p

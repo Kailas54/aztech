@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 export default function About() {
   return (
-    <section id="about" className="py-20 md:py-20 bg-slate-50 relative overflow-hidden">
+    <section id="about" className="py-20 md:py-20 bg-blue-50 relative overflow-hidden">
       {/* Decorative circle */}
       <div className="absolute top-0 right-0 -mr-20 -mt-20 w-64 h-64 rounded-full bg-primary/5 blur-3xl"></div>
 
